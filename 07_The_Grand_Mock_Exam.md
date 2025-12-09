@@ -856,34 +856,34 @@ Find free slot >= 2 units.
 *   Downstream Speed = 13+4=17. Time = 68/17 = 4.
 
 ## B. Technical Core
-*   **Q26: B (Context Free)** - Equal count requires a stack (memory). DFA cannot do it.
-*   **Q27: B (Regular)** - DFAs define Regular languages.
-*   **Q28: C (Halting Problem)** - Classic undecidable problem.
-*   **Q29: B (Not Regular)** - Pumping Lemma is a negative test.
-*   **Q30: C (Context Sensitive)** - Matching 3 counts (a,b,c) uses CSG (or Turing Machine).
-*   **Q31: C (X is superkey)** - BCNF removes functional dependency where LHS is not a candidate key.
-*   **Q32: B (DELETE)** - It is DML (logged). TRUNCATE is DDL (min logging).
-*   **Q33: B (Plan)**.
-*   **Q34: D (Durability)**.
-*   **Q35: D (Inner)**.
-*   **Q36: A (Insert/Update)** - Because indexes must be re-balanced on write.
-*   **Q37: A (Dirty Read)**.
-*   **Q38: B (FIFO)** - More frames = More page faults (sometimes).
-*   **Q39: B (ps aux)**.
-*   **Q40: B (Binary Sem)**.
-*   **Q41: B (Circular Wait)**.
-*   **Q42: A (Paging)**.
-*   **Q43: A (Seek Time)**.
-*   **Q44: B (Open/Closed)**.
-*   **Q45: C (Interfaces)**.
-*   **Q46: B (Friends/Inner)** - Not child classes (Protected).
-*   **Q47: B (Overloading)** - Static binding.
-*   **Q48: B (O(n))** - Building heap is linear time using `heapify`.
-*   **Q49: C (In-order)** - Sorted order.
-*   **Q50: B (Negative Edges)** - Bellman Ford is needed there.
-*   **Q51: B (Recursion)**.
-*   **Q52: B (Sorted)** - Pivot becomes minimum/maximum. O(n^2).
-*   **Q53: D (All)**.
+*   **Q26: B (Context Free)** - Equal count means we need to "count" 0s and match with 1s. This requires memory (Stack), which DFA lacks. CFG deals with stacks.
+*   **Q27: B (Regular)** - DFAs and NFAs both recognize exactly the set of Regular Languages.
+*   **Q28: C (Halting Problem)** - It is logically impossible to create a program that predicts if *any* arbitrary program will halt. This is the Halting Problem (Undecidable).
+*   **Q29: B (Not Regular)** - Pumping Lemma is used to prove a language is *Infinite* and *Not Regular* by showing it fails the "pump" condition.
+*   **Q30: C (Context Sensitive)** - `a^n b^n c^n` requires matching three independent counts, which Pushdown Automata (CFG) cannot do. Needs Linear Bounded Automata.
+*   **Q31: C (X is superkey)** - In BCNF, *every* determinant must be a Super Key. This handles "overlapping candidate keys" which 3NF misses.
+*   **Q32: B (DELETE)** - DELETE logs every row removal (slow, rollback possible). TRUNCATE deallocates pages (fast, harder to rollback).
+*   **Q33: B (Plan)** - Runs the query and shows actual run times vs estimated costs. Critical for optimizing Slow Queries.
+*   **Q34: D (Durability)** - Once committed, data survives power loss (saved to disk via WAL).
+*   **Q35: D (Inner)** - Returns only rows where the join condition matches in *both* tables.
+*   **Q36: A (Insert/Update)** - Indexes are B-Trees. An Insert requires re-balancing the tree, making write operations slower.
+*   **Q37: A (Dirty Read)** - Reading uncommitted info. If the other transaction rolls back, you read invalid data.
+*   **Q38: B (FIFO)** - "Belady's Anomaly": Increasing page frames can sometimes *increase* page faults in FIFO.
+*   **Q39: B (ps aux)** - `ps` shows processes. `ls` is files. `grep` searches text.
+*   **Q40: B (Binary Sem)** - 0 or 1. Used for Mutual Exclusion (Mutex). Counting Semaphore can be > 1.
+*   **Q41: B (Circular Wait)** - Process A passes to B, B to C, C back to A. Deadlock cycle.
+*   **Q42: A (Paging)** - Breaks memory into fixed-size blocks (pages) to simulate larger RAM on disk.
+*   **Q43: A (Seek Time)** - Mechanical time for the disk head to move to the right track (slowest part).
+*   **Q44: B (Open/Closed)** - Open for extension (new features), Closed for modification (don't break old code).
+*   **Q45: C (Interfaces)** - Java forbids multiple class inheritance to avoid Diamond Problem, but allows multiple Interfaces.
+*   **Q46: B (Friends/Inner)** - Private is visible to the class itself, Friend functions (C++), or Inner Classes (Java). Subclasses see Protected.
+*   **Q47: B (Overloading)** - Decision made at Compile Time (Static Poly). Overriding is Runtime (Dynamic Poly).
+*   **Q48: B (O(n))** - `BuildHeap` is O(n), not O(n log n), because lower levels have fewer nodes to sift down.
+*   **Q49: C (In-order)** - In-Order traversal of a BST visits nodes: Left -> Root -> Right, resulting in sorted values.
+*   **Q50: B (Negative Edges)** - Dijkstra assumes once a node is visited, its distance is final. Negative edges break this. Use Bellman-Ford.
+*   **Q51: B (Recursion)** - Function calls are pushed onto the "Call Stack".
+*   **Q52: B (Sorted)** - If pivot is always smallest/largest, QuickSort degrades to O(n^2). Randomized pivot fixes this.
+*   **Q53: D (All)** - BFS/DFS check back-edges. Union-Find checks if nodes are already in the same set.
 
 ## C. Output
 *   **Q54: B** (Ref modify).
@@ -906,30 +906,30 @@ Find free slot >= 2 units.
 *   **Q71: A (Mello)** - Stack strings are mutable.
 *   **Q72: C (SegFault)** - String literals are read-only memory.
 *   **Q73: A (321123)** - Pre code vs Post code.
-*   **Q74: A (Break exits)**.
-*   **Q75: B (No)** - Strings are immutable in Java.
-*   **Q76: A (Yes)** - `std::string` is mutable.
-*   **Q77: B (1 byte)** - Every object needs unique address.
-*   **Q78: B (Initializer)** - `__new__` is constructor.
-*   **Q79: A (True)** - JS type coercion is weird.
-*   **Q80: B (No)** - `exit()` kills JVM instantly.
-*   **Q81: C (void*)**.
-*   **Q82: A (True)** - Python chains comparators.
-*   **Q83: C (All)** - Friends can access private members.
-*   **Q84: C (NULL)** - Comparing NULL gives NULL.
-*   **Q85: C (Full vs Partial)**.
-*   **Q86: B (Soft)**.
-*   **Q87: C (Everyone)**.
-*   **Q88: B (ps)**.
-*   **Q89: C (ICMP)**.
-*   **Q90: B (SSH)**.
-*   **Q91: A (DNS)**.
-*   **Q92: B (Security)**.
-*   **Q93: A (O(1))**.
-*   **Q94: B (O(N))**.
-*   **Q95: B (O(N log N))**.
-*   **Q96: B (Binary Search)**.
-*   **Q97: C (8)** - 1 * 2^3.
-*   **Q98: C (0)** - XORing same number is 0.
-*   **Q99: A (True)** - `False || True` is True.
-*   **Q100: B (Infinite Recursion)**.
+*   **Q74: A (Break exits)** - `break` terminates the loop immediately. `continue` jumps to the next iteration.
+*   **Q75: B (No)** - Java Strings are immutable for security and Thread safety. Use `StringBuilder` for mutable.
+*   **Q76: A (Yes)** - C++ `std::string` is mutable. You can do `str[0] = 'a'`.
+*   **Q77: B (1 byte)** - To ensure two different objects have different addresses in memory.
+*   **Q78: B (Initializer)** - `__new__` creates the object. `__init__` initializes its variables.
+*   **Q79: A (True)** - `![]` becomes `false` (0). `[]` becomes `0`. `0 == 0` is True. JS is wild.
+*   **Q80: B (No)** - `System.exit()` halts the JVM instantly. `finally` block is skipped.
+*   **Q81: C (void*)** - `malloc` allocates raw bytes. You must cast it (e.g., `(int*)malloc(...)`).
+*   **Q82: A (True)** - Python supports mathematical chaining: `3 < 4` AND `4 < 5`.
+*   **Q83: C (All)** - A `friend` function has access to Private, Protected, and Public members of the class.
+*   **Q84: C (NULL)** - In SQL, `NULL` is "Unknown". Unknown == Unknown is Unknown (NULL). Logic fails.
+*   **Q85: C (Full vs Partial)** - PUT replaces the entire resource. PATCH updates only specific fields.
+*   **Q86: B (Soft)** - `soft` keeps changes in Staging (Ready to commit). `mixed` keeps in Working Dir. `hard` deletes them.
+*   **Q87: C (Everyone)** - 4(Read)+2(Write)+1(Exec) = 7. Owner(7), Group(7), Others(7). Unsafe!
+*   **Q88: B (ps)** - `docker ps` lists running. `docker ps -a` lists all (including stopped).
+*   **Q89: C (ICMP)** - Internet Control Message Protocol. It has no port number.
+*   **Q90: B (SSH)** - Secure Shell for remote login.
+*   **Q91: A (DNS)** - Domain Name System (UDP/TCP).
+*   **Q92: B (Security)** - 80 sends text in plain. 443 sends SSL/TLS encrypted traffic.
+*   **Q93: A (O(1))** - Arrays are contiguous memory. `Address = Base + Index * Size`. Instant.
+*   **Q94: B (O(N))** - Must traverse from Head to `i` pointers.
+*   **Q95: B (O(N log N))** - Divide and Conquer always splits logN times. Consistent speed.
+*   **Q96: B (Binary Search)** - Divides search space in half. O(log N).
+*   **Q97: C (8)** - `1` is `0001`. Shift left 3 -> `1000`, which is 8.
+*   **Q98: C (0)** - XOR Table: 1^1=0, 0^0=0. A number XOR itself is always 0.
+*   **Q99: A (True)** - AND has higher precedence? Actually parenthesis first: `(True && False)` is False. `False || True` is True.
+*   **Q100: B (Infinite Recursion)** - Each call adds a frame to the Stack. Infinite calls = Stack Full.
