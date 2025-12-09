@@ -786,17 +786,35 @@ Find free slot >= 2 units.
 
 ## A. Aptitude
 *   **Q1: B (32.16)**
+    *   Rel Speed = (Len / Time) = 140/25 = 5.6 m/s = 20.16 km/hr.
+    *   Rel Speed = Train - Man (Same dir). Train = 20.16 + 12 = **32.16**.
 *   **Q2: A (5:1)**
+    *   Let Len = L. S_same = L/6, S_opp = L/4. Wait, Time=Dist/RelSpd.
+    *   2L/(x-y) = 6 -> x-y = L/3. 2L/(x+y) = 4 -> x+y = L/2.
+    *   Add: 2x = 5L/6 -> x=5L/12. Sub: 2y = L/6 -> y=L/12. Ratio 5:1.
 *   **Q3: B (12)**
+    *   Avg Speed = `2xy / (x+y)` = `2*10*15 / 25` = 300/25 = **12**.
 *   **Q4: B (22.5)**
+    *   A = 3B. A=x, B=3x. Diff 2x=60 -> x=30. B=90.
+    *   Together = (30*90)/120 = 22.5.
 *   **Q5: D (225)**
+    *   1M = 1/100. 10M = 1/10. Together (10M+15W) = 1/6.
+    *   15W = 1/6 - 1/10 = 4/60 = 1/15.
+    *   1W = (1/15)/15 = 1/225. Time = 225 days.
 *   **Q6: C (3 9/17)**
+    *   Rate = 1/5 + 1/6 - 1/12 = (12+10-5)/60 = 17/60. Time = 60/17.
 *   **Q7: B (1/221)**
+    *   (4/52) * (3/51) = 1/221.
 *   **Q8: C (720)**
+    *   OPTICAL. OIA together. (OIA)PTCL = 5 units. 5! * 3! = 120 * 6 = 720.
 *   **Q9: A (10/21)**
+    *   Total 7. Non-blue = 5. 5C2 / 7C2 = 10 / 21.
 *   **Q10: A (5:24)**
+    *   3 min = 18 deg. |30(5) - 5.5M| = 18. 150-18 = 5.5M. 132/5.5 = 24.
 *   **Q11: B (22)**
+    *   Hands overlap once per hour, but skip 11-1. So 11 times in 12h, 22 in 24h.
 *   **Q12: A (Friday)**
+    *   1600(0) + 300(1) + 46(odd days) + Jan-Aug. It works out to Friday.
 *   **Q13: B (49)**
 *   Squares: 1, 2, 3, 4, 5, 6... Next is 7^2 = **49**.
 
@@ -888,5 +906,30 @@ Find free slot >= 2 units.
 *   **Q71: A (Mello)** - Stack strings are mutable.
 *   **Q72: C (SegFault)** - String literals are read-only memory.
 *   **Q73: A (321123)** - Pre code vs Post code.
-*   **Q79:** JS coercion is wild.
-*   **Q97:** Bitwise left shift `1 * 2^3`.
+*   **Q74: A (Break exits)**.
+*   **Q75: B (No)** - Strings are immutable in Java.
+*   **Q76: A (Yes)** - `std::string` is mutable.
+*   **Q77: B (1 byte)** - Every object needs unique address.
+*   **Q78: B (Initializer)** - `__new__` is constructor.
+*   **Q79: A (True)** - JS type coercion is weird.
+*   **Q80: B (No)** - `exit()` kills JVM instantly.
+*   **Q81: C (void*)**.
+*   **Q82: A (True)** - Python chains comparators.
+*   **Q83: C (All)** - Friends can access private members.
+*   **Q84: C (NULL)** - Comparing NULL gives NULL.
+*   **Q85: C (Full vs Partial)**.
+*   **Q86: B (Soft)**.
+*   **Q87: C (Everyone)**.
+*   **Q88: B (ps)**.
+*   **Q89: C (ICMP)**.
+*   **Q90: B (SSH)**.
+*   **Q91: A (DNS)**.
+*   **Q92: B (Security)**.
+*   **Q93: A (O(1))**.
+*   **Q94: B (O(N))**.
+*   **Q95: B (O(N log N))**.
+*   **Q96: B (Binary Search)**.
+*   **Q97: C (8)** - 1 * 2^3.
+*   **Q98: C (0)** - XORing same number is 0.
+*   **Q99: A (True)** - `False || True` is True.
+*   **Q100: B (Infinite Recursion)**.
