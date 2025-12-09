@@ -107,7 +107,66 @@ II. Some fans are cars.
 *   C) HS BQ F
 *   D) HQ BQ F
 
-... *(Questions 16-25 covers Mixtures, Ages, Profit/Loss)*
+### Topic: Mixtures, Ages, Profit/Loss
+**Q16.** A grocer mixes 26 kg of tea at Rs. 20/kg with 30 kg of tea at Rs. 36/kg. What is the average price?
+*   A) Rs. 28.57
+*   B) Rs. 30
+*   C) Rs. 27
+*   D) Rs. 32
+
+**Q17.** The ratio of ages of A and B is 3:5. 10 years later, it will be 5:7. What is A's present age?
+*   A) 15
+*   B) 20
+*   C) 25
+*   D) 30
+
+**Q18.** By selling a watch for Rs. 1440, a man loses 10%. At what price should he sell it to gain 10%?
+*   A) Rs. 1584
+*   B) Rs. 1760
+*   C) Rs. 1800
+*   D) Rs. 1900
+
+**Q19.** Two vessels A and B contain milk and water in the ratio 7:5 and 17:7 respectively. In what ratio should larger quantities be taken from both to form a mixture of 1:1?
+*   A) 1:2
+*   B) 2:1
+*   C) 2:3
+*   D) 3:2
+
+**Q20.** A father is 3 times as old as his son. 8 years ago, he was 5 times as old. What is the son's present age?
+*   A) 12
+*   B) 16
+*   C) 18
+*   D) 20
+
+**Q21.** Simple Interest on a sum for 3 years at 10% is Rs. 300. What is the Compound Interest for the same period?
+*   A) Rs. 300
+*   B) Rs. 310
+*   C) Rs. 331
+*   D) Rs. 350
+
+**Q22.** A shopkeeper marks his goods 20% above cost price and allows a discount of 10%. His gain percent is?
+*   A) 8%
+*   B) 10%
+*   C) 12%
+*   D) 15%
+
+**Q23.** In a bag, there are coins of 25 p, 10 p and 5 p in the ratio of 1:2:3. If there is Rs. 30 in all, how many 5 p coins are there?
+*   A) 50
+*   B) 100
+*   C) 150
+*   D) 200
+
+**Q24.** Average of 5 numbers is 27. If one number is excluded, the average becomes 25. The excluded number is?
+*   A) 30
+*   B) 35
+*   C) 40
+*   D) 28
+
+**Q25.** A boat can travel with a speed of 13 km/hr in still water. If the speed of the stream is 4 km/hr, find the time taken by the boat to go 68 km downstream.
+*   A) 3 hours
+*   B) 4 hours
+*   C) 5 hours
+*   D) 6 hours
 
 ---
 # 🔵 SECTION B: TECHNICAL CORE (Massively Expanded)
@@ -335,9 +394,6 @@ print(a + b)
 *   C) 6 7
 *   D) Undefined Behavior (Compiler dependent order of evaluation)
 
-**(Assuming 5 more similar output questions)**
-*(Actually, let's just make it 100+ right now as requested. No placeholders.)*
-
 ### 🍵 Java Output Challenges
 **Q59. Java String Pool:**
 ```java
@@ -518,34 +574,169 @@ void fun(int n) {
 *   C) 321
 *   D) 123321
 
-**(Questions 74-100: Rapid Fire Syntax)**
-**Q74.** `break` vs `continue`. (Break exits loop, Continue skips iteration).
-**Q75.** Is `String` mutable in Java? (No).
-**Q76.** Is `String` mutable in C++? (Yes, `std::string`).
-**Q77.** Size of empty class in C++? (1 byte, not 0).
-**Q78.** Python `__init__` is a constructor? (Yes).
-**Q79.** JavaScript `[] == ![]`? (True. Logic: `[]`->0, `![]`->False->0).
-**Q80.** Java `System.exit(0)` in try block? (Finally block implies skipped).
-**Q81.** C++ `malloc` returns? (`void*`).
-**Q82.** Python `3 < 4 < 5`? (True, chained comparison).
-**Q83.** C++ `friend` function access? (Private members).
-**Q84.** SQL `NULL == NULL`? (False/Unknown. Use `IS NULL`).
-**Q85.** REST API Put vs Patch? (Put = Replace, Patch = Partial Update).
-**Q86.** Git command to undo last commit? (`git reset --soft HEAD~1`).
-**Q87.** Linux Permissions `777`? (Read/Write/Exec for Everyone).
-**Q88.** Docker command to see running containers? (`docker ps`).
-**Q89.** Protocol for ping? (ICMP).
-**Q90.** Port 22? (SSH).
-**Q91.** Port 53? (DNS).
-**Q92.** Port 80 vs 443? (HTTP vs HTTPS).
-**Q93.** Big O of accessing array index? (O(1)).
-**Q94.** Big O of accessing Linked List index? (O(N)).
-**Q95.** Merge Sort Complexity? (O(N log N) always).
-**Q96.** Best Search Algo for sorted array? (Binary Search).
-**Q97.** `1 << 3` equals? (8).
-**Q98.** `10 ^ 10` (XOR) equals? (0).
-**Q99.** `(true && false) || true`? (True).
-**Q100.** Stack Overflow happens in? (Infinite Recursion).
+**(Questions 74-100: Rapid Fire Syntax & Concepts)**
+
+**Q74.** `break` vs `continue` statement?
+*   A) `break` exits loop, `continue` skips iteration
+*   B) `break` skips iteration, `continue` exits loop
+*   C) Both exit loop
+*   D) Both skip iteration
+
+**Q75.** Is `String` mutable in Java?
+*   A) Yes
+*   B) No (Immutable)
+*   C) Only if `static`
+*   D) Depends on JVM
+
+**Q76.** Is `std::string` mutable in C++?
+*   A) Yes
+*   B) No
+*   C) Only via pointers
+*   D) Only in C++11
+
+**Q77.** Size of an empty class in C++?
+*   A) 0 bytes
+*   B) 1 byte (to ensure unique address)
+*   C) 4 bytes
+*   D) 8 bytes
+
+**Q78.** Python `__init__` is strictly a:
+*   A) Constructor
+*   B) Initializer (Object already created)
+*   C) Destructor
+*   D) Static method
+
+**Q79.** JavaScript Result: `[] == ![]`?
+*   A) True
+*   B) False
+*   C) Error
+*   D) NaN
+
+**Q80.** Java: If `try` has `System.exit(0)`, does `finally` run?
+*   A) Yes
+*   B) No
+*   C) Sometimes
+*   D) Compilation Error
+
+**Q81.** C++ `malloc` returns what type of pointer?
+*   A) `int*`
+*   B) `char*`
+*   C) `void*`
+*   D) `null`
+
+**Q82.** Python Result: `3 < 4 < 5`?
+*   A) True
+*   B) False
+*   C) Error
+*   D) 3
+
+**Q83.** C++ `friend` function can access:
+*   A) Only public members
+*   B) Only protected members
+*   C) Private, Protected, and Public members
+*   D) Only static members
+
+**Q84.** SQL: `NULL == NULL` evaluates to?
+*   A) True
+*   B) False
+*   C) NULL (Unknown)
+*   D) Error
+
+**Q85.** REST API: Difference between PUT and PATCH?
+*   A) No difference
+*   B) PUT = Create, PATCH = Delete
+*   C) PUT = Full Replace, PATCH = Partial Update
+*   D) PUT = Partial, PATCH = Full
+
+**Q86.** Git command to undo the last commit but keep changes in staging?
+*   A) `git reset --hard HEAD~1`
+*   B) `git reset --soft HEAD~1`
+*   C) `git revert HEAD`
+*   D) `git checkout .`
+
+**Q87.** Linux Permissions `777` means:
+*   A) Read Only
+*   B) Read/Write for Owner only
+*   C) Read/Write/Exec for Everyone (Owner, Group, Others)
+*   D) No permissions
+
+**Q88.** Docker command to see running containers?
+*   A) `docker ls`
+*   B) `docker ps`
+*   C) `docker run`
+*   D) `docker images`
+
+**Q89.** Protocol used by `ping`?
+*   A) TCP
+*   B) UDP
+*   C) ICMP
+*   D) HTTP
+
+**Q90.** Port 22 is typically for?
+*   A) HTTP
+*   B) SSH
+*   C) DNS
+*   D) FTP
+
+**Q91.** Port 53 is for?
+*   A) DNS
+*   B) DHCP
+*   C) SMTP
+*   D) POP3
+
+**Q92.** Difference between HTTP Port 80 and 443?
+*   A) 80 is fast, 443 is slow
+*   B) 80 is HTTP (Insecure), 443 is HTTPS (Secure)
+*   C) 80 is UDP, 443 is TCP
+*   D) 443 is for emails
+
+**Q93.** Big O of accessing an array index `arr[i]`?
+*   A) O(1)
+*   B) O(n)
+*   C) O(log n)
+*   D) O(n^2)
+
+**Q94.** Big O of accessing Linked List index `node[i]`?
+*   A) O(1)
+*   B) O(n)
+*   C) O(log n)
+*   D) O(n log n)
+
+**Q95.** Merge Sort Time Complexity?
+*   A) O(n^2)
+*   B) O(n log n)
+*   C) O(n)
+*   D) O(log n)
+
+**Q96.** Best Search Algorithm for a sorted array?
+*   A) Linear Search
+*   B) Binary Search
+*   C) Depth First Search
+*   D) Hashing
+
+**Q97.** Bitwise: `1 << 3` equals?
+*   A) 3
+*   B) 6
+*   C) 8
+*   D) 1
+
+**Q98.** Bitwise: `10 ^ 10` (XOR) equals?
+*   A) 10
+*   B) 20
+*   C) 0
+*   D) 100
+
+**Q99.** Logic: `(true && false) || true`?
+*   A) True
+*   B) False
+*   C) Error
+*   D) Null
+
+**Q100.** Stack Overflow error usually happens due to:
+*   A) Large Heap allocation
+*   B) Infinite Recursion
+*   C) Divide by Zero
+*   D) Null Pointer Exception
 
 ---
 # 🔴 SECTION D: CODING SCENARIOS (3 Problems - 60 Mins)
@@ -606,6 +797,45 @@ Find free slot >= 2 units.
 *   **Q10: A (5:24)**
 *   **Q11: B (22)**
 *   **Q12: A (Friday)**
+*   **Q13: B (49)**
+*   Squares: 1, 2, 3, 4, 5, 6... Next is 7^2 = **49**.
+
+*   **Q14: D (Neither)**
+*   Cars -> Cats <- Fans. No direct link Cars-Fans.
+
+*   **Q15: C (HS BQ F)**
+*   +1 shift. G->H, R->S, A->B...
+
+*   **Q16: A (28.57)**
+*   (26*20 + 30*36) / (26+30) = (520+1080)/56 = 1600/56 = 28.57.
+
+*   **Q17: A (15)**
+*   3x/5x -> (3x+10)/(5x+10) = 5/7 -> 21x+70 = 25x+50 -> 4x=20 -> x=5. A = 15.
+
+*   **Q18: B (1760)**
+*   CP = 1440/0.9 = 1600. SP needed = 1600 * 1.1 = 1760.
+
+*   **Q19: B (2:1)**
+*   Standard Alligation Rule.
+
+*   **Q20: B (16)**
+*   F=3S. (3S-8) = 5(S-8). -> 3S-8 = 5S-40 -> 2S=32 -> S=16.
+
+*   **Q21: C (331)**
+*   SI=300 -> P*3*10/100=300 -> P=1000.
+*   CI = 1000 * (1.1)^3 - 1000 = 1331 - 1000 = 331.
+
+*   **Q22: A (8%)**
+*   100 -> 120 -> 10% discount = 108. Gain 8.
+
+*   **Q23: C (150)**
+*   25x + 20x + 15x = 3000 (paise). 60x=3000 -> x=50. 5p coins = 3x = 150.
+
+*   **Q24: B (35)**
+*   Total=135. New Total=100. Diff=35.
+
+*   **Q25: B (4 hours)**
+*   Downstream Speed = 13+4=17. Time = 68/17 = 4.
 
 ## B. Technical Core
 *   **Q26: B (Context Free)** - Equal count requires a stack (memory). DFA cannot do it.
